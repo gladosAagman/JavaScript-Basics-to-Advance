@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdby="harry" data-conceptby="rohan" >Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <script>
+            // let div = document.createElement("div");
+            // div.innerHTML = "I have been inserted <b>by harry</b>"
+            // div.setAttribute("class", "created");
+            // document.querySelector(".container").before(div);
+            let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("beforebegin", "<b> I am under the water. Please h elp me here too much raining.... iuuuuooooo</b>")
+        </script>
+    </div>
+</body>
+
+</html>
+
+<!-- It defines a class Person with properties name, age, and gender, and a method introduce that logs a message to the console introducing the person.
+It creates an instance p1 of the Person class with properties name set to "John", age set to 30, and gender set to "male". It then calls the introduce method on p1 to log a message to the console.
+It creates another instance p2 of the Person class with properties name set to "Jane", age set to 25, and gender set to "female". It then calls the introduce method on p2 to log a message to the console.
+It defines a static method createPerson on the Person class that takes a name, age, and gender as arguments and returns a new instance of the Person class with those properties.
+It creates a new instance p3 of the Person class using the createPerson method with arguments "Bob", 40, and "male". It then calls the introduce method on p3 to log a message to the console.
+Overall, this code demonstrates how to define a class with properties and methods in JavaScript, and how to create instances of the class with different values. It also shows how to define a static method on a class and how to use it to create new instances. -->
